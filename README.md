@@ -1,3 +1,5 @@
+Here is the link of article: https://www.linkedin.com/pulse/display-data-angular-example-megha-kuchchal/
+
 # AngularFrontendApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
