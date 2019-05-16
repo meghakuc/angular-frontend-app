@@ -1,0 +1,16 @@
+<h1 class ="title">{{title}}</h1>
+<mat-card class="card" *ngFor="let customerReview of customerReviews">
+  <mat-card-header>
+    <mat-card-title>{{customerReview.brand}}</mat-card-title>
+    <mat-card-subtitle>{{customerReview.month}}, {{customerReview.year}}</mat-card-subtitle>
+	<mat-card-subtitle>{{customerReview.region}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+	<ngb-rating [(rate)]="customerReview.rating" max="5"></ngb-rating><pre><b>{{customerReview.rating}}</b> out of 5 stars</pre>
+    <p>{{customerReview.body}}</p>
+  </mat-card-content>
+  <pre>{{customerReview.comment_count}} Comments</pre>
+  <mat-card-actions>
+    <a href={{customerReview.review_url}}>Review</a>
+  </mat-card-actions>
+</mat-card>
